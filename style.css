@@ -1,60 +1,89 @@
 h1 {
-  text-align: center;
-  margin-top: 100px;
-  font-size: 5rem;
-}
-
-.timer {
-  font-size: 3.5rem;
-  font-family: cursive;
-  text-align: center;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin-top: 3rem;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color .3s ease, color .3s ease;
-}
-
-.start-button {
-  background-color: #07b507;
-}
-
-.start-button:hover {
-  background-color: transparent;
-  color: #07b507;
-  border: 2px solid #07b507;
-}
-
-.stop-button {
-  background-color: #d73108;
-}
-
-.stop-button:hover {
-  background-color: transparent;
-  color: #d73108;
-  border: 2px solid #d73108;
-}
-
-.reset-button {
-  background-color: #666666;
-}
-
-.reset-button:hover {
-  background-color: transparent;
-  color: #666666;
-  border: 2px solid #666666;
-}
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 5vw;
+  }
+  
+  .timer {
+    font-size: 10vw;
+    font-family: cursive;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5vh;
+  }
+  
+  button {
+    padding: 1rem 2rem;
+    font-size: 2vw;
+    font-weight: 500;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .start-button {
+    background-color: #07b507;
+  }
+  
+  .start-button:hover {
+    background-color: transparent;
+    color: #07b507;
+    border: 2px solid #07b507;
+  }
+  
+  .stop-button {
+    background-color: #d73108;
+  }
+  
+  .stop-button:hover {
+    background-color: transparent;
+    color: #d73108;
+    border: 2px solid #d73108;
+  }
+  
+  .reset-button {
+    background-color: #666666;
+  }
+  
+  .reset-button:hover {
+    background-color: transparent;
+    color: #666666;
+    border: 2px solid #666666;
+  }
+  
+  @media (min-width: 600px) {
+    .container {
+      flex-direction: row;
+    }
+  
+    button {
+      width: auto;
+      max-width: none;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    h1 {
+      font-size: 4rem;
+    }
+  
+    .timer {
+      font-size: 5rem;
+    }
+  
+    button {
+      font-size: 1.5rem;
+    }
+  }
+  
